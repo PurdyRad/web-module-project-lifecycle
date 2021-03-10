@@ -34,25 +34,6 @@ class App extends React.Component {
   }
 
   
-
-  // changeHandler = (e) => {
-  //   this.setState({
-  //     login: e.target.value
-  //   });
-  // };
-
-  // submitToMyWill = (e) => {
-  //   e.preventDefault();
-  //   axios.get(`https://api.github.com/users/${this.state.login}`)
-  //   .then(res => {
-  //     this.setState({
-  //       login: res.data.login
-  //     });
-  //   })
-  //   .catch(err => {
-  //     console.log(err)
-  //   });
-  // }
   
   render () {
 
@@ -63,8 +44,10 @@ class App extends React.Component {
       {this.state.gitAcc ?   <Git 
         {...this.state.gitAcc} 
         /> : 'Sorry Unavailable'}
+        <p className='ptag'>Woah look at all these followers...</p>
         {this.state.gitFollowers.map((data) => (<Git {...data} />))}
-      </div>
+        
+        </div>
     </div>
   )};
 }

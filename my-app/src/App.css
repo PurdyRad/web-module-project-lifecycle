@@ -66,3 +66,9 @@
 form {
   margin: 4px;
 }
+
+.ptag {
+  border-width: 5px;
+  border-top: inset rgb(233, 230, 63);
+  border-bottom: ridge rgb(233, 230, 63);
+}
