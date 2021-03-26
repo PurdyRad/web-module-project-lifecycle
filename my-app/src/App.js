@@ -45,7 +45,7 @@ class App extends React.Component {
         {...this.state.gitAcc} 
         /> : 'Sorry Unavailable'}
         <p className='ptag'>Woah look at all these followers...</p>
-        {this.state.gitFollowers.map((data) => (<Git {...data} />))}
+        {this.state.gitFollowers.map((data) => (<Git key={data.id} {...data} />))}
         
         </div>
     </div>
